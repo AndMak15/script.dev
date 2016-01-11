@@ -25,7 +25,7 @@ class RegForm extends Model
             ['password', 'string', 'min' => 6, 'max' => 255],
             ['username', 'unique',
                 'targetClass' => User::className(),
-                'message' => 'Это имя уже занято.'],
+                'message' => 'Логін вже занято.'],
             ['email', 'email'],
             ['email', 'unique',
                 'targetClass' => User::className(),
